@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+      <bean id="s" class="com.masai.Student">
+      <constructor-arg name="roll" value="20"/>
+      <constructor-arg name="name" value="maehsh"/>
+      <constructor-arg name="marks" value="300"/>
+      
+      </bean>
+      
+      <bean id="s1" class="com.masai.Student">
+       <constructor-arg name="roll" value="20"/>
+      <constructor-arg name="name" value="maehsh"/>
+      <constructor-arg name="marks" value="300"/>
+      </bean>
+      
+      
+      <bean id="s2" class="com.masai.Student">
+       <constructor-arg name="roll" value="20"/>
+      <constructor-arg name="name" value="maehsh"/>
+      <constructor-arg name="marks" value="300"/>
+      </bean>
+        
+        <bean id="c" class="com.masai.Collage">
+        <property name="cname" value="Nit"></property>
+        <property name="student">
+         <list>
+         <ref bean="s"/>
+         <ref bean="s1"/>
+         <ref bean="s2"/>
+         
+         
+         </list>
+        </property>
+        </bean>
+        
+     
+        
+       
+</beans>

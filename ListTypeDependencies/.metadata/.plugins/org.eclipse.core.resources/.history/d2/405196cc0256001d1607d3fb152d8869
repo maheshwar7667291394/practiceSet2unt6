@@ -1,0 +1,28 @@
+package com.masai;
+
+import java.util.List;
+
+public class A {
+	
+	private List<String> name;
+
+	public List<String> getName() {
+		return name;
+	}
+
+	public void setName(List<String> name) {
+		this.name = name;
+	}
+	public void show() {
+		System.out.println(name);
+	}
+
+	@Override
+	public String toString() {
+		return "A [name=" + name + "]";
+	}
+	
+	
+
+}
+ 

@@ -1,0 +1,23 @@
+package com.masai;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+public class A {
+	
+	private Set<String> name;
+
+	public void show() {
+		System.out.println(name);
+	}
+
+	@Override
+	public String toString() {
+		return "A [name=" + name + "]";
+	}
+	
+	
+
+}
+ 

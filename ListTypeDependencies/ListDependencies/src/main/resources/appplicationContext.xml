@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+      <bean id="s" class="com.masai.Student">
+      <constructor-arg name="roll" value="20"/>
+      <constructor-arg name="name" value="maehsh"/>
+      <constructor-arg name="marks" value="300"/>
+      
+      </bean>
+      
+      <bean id="s1" class="com.masai.Student">
+       <constructor-arg name="roll" value="20"/>
+      <constructor-arg name="name" value="maehsh"/>
+      <constructor-arg name="marks" value="300"/>
+      </bean>
+      
+      
+      <bean id="s2" class="com.masai.Student">
+       <constructor-arg name="roll" value="20"/>
+      <constructor-arg name="name" value="maehsh"/>
+      <constructor-arg name="marks" value="300"/>
+      </bean>
+        
+        <bean id="c" class="com.map.Collage">
+        <property name="map">
+        <map>
+        
+        <entry key-ref="s" value="Nit"/>
+         <entry key-ref="s1" value="Geet"/>
+          <entry key-ref="s2" value="IIT"/>
+        
+        </map>
+        </property>
+         
+        </bean>
+        
+     
+        
+       
+</beans>
